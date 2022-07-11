@@ -38,6 +38,7 @@ html {
 body {
     width: 100%;
     overflow-x: hidden;
+    background: var(--white);
 }
 
 /* FIXME: Setting up the project ends */
@@ -367,6 +368,294 @@ body {
 
 /* FIXME: Header ends */
 
+/* TODO: Grid section starts */
+
+.grid__section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 30rem));
+    gap: 3rem 1rem;
+    justify-content: center;
+    padding: 4rem 2rem;
+}
+
+.grid__content {
+    background: var(--black);
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.grid__content h2 {
+    font-size: 2rem;
+    color: var(--purple);
+}
+
+.grid__content p {
+    font-size: 1.3rem;
+    color: var(--white);
+    margin-top: 1rem;
+    font-weight: 450;
+}
+
+.grid__content ul {
+    margin-top: 1rem;
+}
+
+.grid__content ul li:nth-child(1) {
+    font-size: 1.4rem;
+}
+
+.grid__content ul li span {
+    font-weight: 450;
+}
+
+.grid__content ul li {
+    font-size: 1.3rem;
+    color: var(--white);
+}
+
+/* FIXME: Grid section ends */
+
+/* TODO: Benefits section starts */
+
+.benefits__section {
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.list__content ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.list__content li {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.list__content .fa-check {
+    color: var(--white);
+    padding: .5rem 1rem;
+    border-radius: 100%;
+    background: var(--pink);
+}
+
+.list__content li {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.benefits__section .more__informations h2 {
+    color: var(--white);
+}
+
+.benefits__section .more__informations .fa-shapes {
+    color: var(--black);
+    background: var(--purple);
+}
+
+.benefits__section .more__informations {
+    background: var(--black);
+}
+
+/* FIXME: Benefits section ends */
+
+/* TODO: Course information starts */
+
+.course__information {
+    padding: 6rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.course__information p {
+    font-size: 2rem;
+    max-width: 72ch;
+    color: var(--second-black);
+}
+
+.course__information p mark {
+    color: var(--black);
+    font-weight: bold;
+}
+
+.course__information h2 {
+    font-size: 3rem;
+    color: var(--black);
+    text-align: center;
+}
+
+.course__results {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 19rem));
+    justify-content: center;
+    gap: 4.5rem 8rem;
+    width: 100%;
+}
+
+.course__results li h3 {
+    font-size: 1.8rem;
+    color: var(--black);
+}
+
+.course__results li {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.course__results .circle {
+    background: var(--black);
+}
+
+.course__results li span {
+    font-size: 1.5rem;
+    color: var(--second-black);
+}
+
+.course__results ul li:nth-child(1) {
+    margin-bottom: 1rem;
+}
+
+/* FIXME: Course informations end */
+
+/* TODO: Bonus starts */
+
+.bonus {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.bonus p {
+    font-size: 2rem;
+    color: var(--black);
+    font-weight: bold;
+    max-width: 60ch;
+}
+
+.bonus__icons {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.bonus__icons i {
+    font-size: 6rem;
+    color: var(--purple);
+}
+
+.bonus__icons div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.bonus__icons h2 {
+    font-size: 1.6rem;
+    color: var(--black);
+    text-align: center;
+}
+
+.bonus .icon h2,
+.bonus .icon i {
+    color: var(--black);
+}
+
+/* FIXME: Bonus ends */
+
+/* TODO: Testimonial starts */
+
+.testimonial__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    padding: 6rem 2rem;
+    background: var(--purple);
+    position: relative;
+}
+
+.testimonial__section > h2 {
+    font-size: 2rem;
+    color: var(--white);
+    text-align: center;
+}
+
+.testimonials__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8rem 2rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 24rem;
+    padding: 2rem 2rem 4rem 2rem;
+    border: 2px solid rgba(0,0,0,0.7);
+    border-radius: 2rem;
+    position: relative;
+    height: 35rem;
+}
+
+.testimonial h3 {
+    font-size: 2rem;
+    color: var(--black);
+    text-transform: capitalize;
+}
+
+.testimonial i {
+    font-size: 4rem;
+    color: var(--black);
+    position: absolute;
+    top: -3rem;
+}
+
+.testimonial p {
+    font-size: 1.2rem;
+    color: var(--white);
+    font-weight: 500;
+}
+
+.unreal__decoration {
+    position: absolute;
+    width: 10rem;
+    top: -5rem;
+    right: -5rem;
+    filter: opacity(40%);
+}
+
+.unreal__decoration img {
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+/* FIXME: Testimonial ends */
+
 /* TODO: Media queries start */
 
 @media screen and (min-width:280px) {
@@ -424,6 +713,36 @@ body {
     }
 
     /* FIXME: Header adjsutments end */
+
+    /* TODO: Testimonial adjsutments */
+
+    .testimonial__section > h2 {
+        font-size: 3rem;
+    }
+
+    .testimonial p {
+        font-size: 1.5rem;
+    }
+
+    .testimonial h3 {
+        font-size: 2.5rem;
+    }
+
+    .testimonial i {
+        font-size: 6rem;
+        top: -4.5rem;
+    }
+
+    .testimonial {
+        height: 40rem;
+    }
+
+    .testimonials__content {
+        gap: 10rem 2rem;
+        margin-top: 6rem;
+    }
+
+    /* FIXME: Testimonial adjsutments end */
        
 }
 
@@ -493,6 +812,34 @@ body {
     }
 
     /* FIXME: Header adjsutments end */
+
+    /* TODO: Benefits section adjustments */
+
+    .list__content li {
+        font-size: 2rem;
+    }
+
+    /* FIXME: Benefits section adjustments end */
+
+    /* TODO: Bonus adjsutments */
+
+    .bonus p {
+        font-size: 3rem;
+    }
+
+    .bonus {
+        padding: 2rem 4rem;
+    }
+
+    .bonus__icons i {
+        font-size: 8rem;
+    }
+    
+    .bonus__icons h2 {
+        font-size: 2rem;
+    }
+
+    /* FIXME: Bonus adjustments end */
     
 }
 
@@ -550,10 +897,26 @@ body {
     .video__clicked {
         top: 50rem;
     }
-
-
-    /* FIXME: Header adjsutments end */
     
+    /* FIXME: Header adjsutments end */
+
+    /* TODO: Grid section adjsutments */
+    
+    .grid__section {
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 18rem));
+        gap: 5rem 1rem;
+    }
+
+    /* FIXME: Grid section adjustments end */
+
+    /* TODO: Benefits section adjustments */
+
+    .benefits__section .more__informations h2 {
+        font-size: 3rem;
+    }
+
+    /* FIXME: Benefits section adjsutments end */
+
 }
 
 @media screen and (min-width:760px) {
@@ -643,7 +1006,30 @@ body {
     }
 
     /* FIXME: Header adjsutments end */
-    
+
+    /* TODO: Bonus adjustments */
+
+    .bonus__icons {
+        flex-direction: row;
+        gap: 10rem;
+    }
+
+    .bonus__icons h2 {
+        font-size: 2.2rem;
+    }
+
+    .bonus__icons i {
+        font-size: 8.5rem;
+    }
+
+    .bonus .button {
+        width: 68rem;
+        text-align: center;
+        padding: 2.5rem 0;
+    }
+
+    /* FIXME: Bonus adjsutments end */
+  
 }
 
 @media screen and (min-width:900px) {
@@ -656,6 +1042,24 @@ body {
     }
 
     /* FIXME: Header adjustments end */
+
+    .course__results {
+        display: grid;
+        grid-template-columns: repeat(3, 22rem);
+        justify-content: center;
+        gap: 4.5rem 8rem;
+        width: 100%;
+    }
+    
+}
+
+@media screen and (min-width:1200px) {
+
+    /* TODO: Grid section adjsutments */
+
+    .grid__section {
+        grid-template-columns: repeat(5, 19rem);
+    }
     
 }
 
@@ -674,6 +1078,41 @@ body {
     }
 
     /* FIXME: Header adjsutments end */
+
+    /* TODO: Benefits adjustments */
+
+    .benefits__section {
+        flex-direction: row;
+        gap: 6rem;
+    }
+
+    .benefits__section .more__informations {
+        align-self: flex-end;
+        background: var(--black);
+    }
     
+    /* FIXME: Benefits adjustments end */
+
+    /* TODO: Testimonial adjsutments */
+
+    .more__informations__container {
+        width: 30rem;
+        position: relative;
+    }
+    
+    .testimonial__section .more__informations {
+        position: absolute;
+        left: -49rem;
+        z-index: 100;
+    }
+
+    .unreal__decoration {
+        width: 50rem;
+        top: -25rem;
+        right: -25rem;
+    } 
+
+    /* FIXME: Testimonial adjsutments end */
+
 }
 

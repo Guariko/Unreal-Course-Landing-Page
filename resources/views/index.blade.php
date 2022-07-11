@@ -9,7 +9,17 @@
 @endsection
 
 @section("main__content")
-<h1>World</h1>
+
+@include("main.grid")
+
+@include("main.benefits")
+
+@include("main.course_information")
+
+@include("main.bonus")
+
+@include("main.testimonial")
+
 @endsection
 
 @section("footer__content")
