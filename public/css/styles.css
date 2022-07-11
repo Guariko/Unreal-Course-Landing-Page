@@ -656,6 +656,64 @@ body {
 
 /* FIXME: Testimonial ends */
 
+/* TODO: Course for starts */
+
+.course__for {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+    background: var(--black);
+    gap: 4rem;
+}
+
+.unreal__logo img {
+    width: 15rem;
+    aspect-ratio: 1;
+}
+
+.course__for > h2 {
+    font-size: 2rem;
+    color: var(--white);
+    text-align: center;
+}
+
+.course__for__logos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.course__for__logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.course__for__logo i {
+    font-size: 3rem;
+    color: var(--purple);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8rem;
+    padding: 2rem 0;
+    background: var(--white);
+    border-radius: 2rem;
+}
+
+.course__for__logo h3 {
+    font-size: 1.3rem;
+    color: var(--white);
+}
+
+/* FIXME: Course for ends */
+
 /* TODO: Media queries start */
 
 @media screen and (min-width:280px) {
@@ -743,6 +801,23 @@ body {
     }
 
     /* FIXME: Testimonial adjsutments end */
+
+    /* TODO: Course for adjsutments */
+
+    .course__for > h2 {
+        font-size: 3rem;
+    }
+
+    .course__for__logo i {
+        font-size: 4rem;
+        width: 9rem;
+    }
+
+    .course__for__logo h3 {
+        font-size: 1.7rem;  
+    }
+
+    /* FIXME: Course for adjsutments end */
        
 }
 
@@ -1029,6 +1104,23 @@ body {
     }
 
     /* FIXME: Bonus adjsutments end */
+
+    /* TODO: Course for adjsutments */
+
+    .course__for > h2 {
+        font-size: 4rem;
+    }
+
+    .course__for__logo i {
+        font-size: 5rem;
+        width: 10rem;
+    }
+
+    .course__for__logo h3 {
+        font-size: 2rem;  
+    }
+
+    /* FIXME: Course for adjsutments end */
   
 }
 
@@ -1113,6 +1205,16 @@ body {
     } 
 
     /* FIXME: Testimonial adjsutments end */
+
+    /* TODO: Course for adjsutments */
+
+    .course__for .more__informations {
+        position: absolute;
+        right: -45rem;
+        top: 1rem;
+    }
+
+    /* FIXME: Course for adjsutments end */
 
 }
 

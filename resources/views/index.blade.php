@@ -20,6 +20,8 @@
 
 @include("main.testimonial")
 
+@include("main.course_for")
+
 @endsection
 
 @section("footer__content")
