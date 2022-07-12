@@ -22,8 +22,18 @@
 
 @include("main.course_for")
 
+@include("main.course_include")
+
+@include("main.teacher")
+
+@include("main.price")
+
+@include("main.questions")
+
 @endsection
 
 @section("footer__content")
-<h1>See you world</h1>
+
+@include("footer")
+
 @endsection

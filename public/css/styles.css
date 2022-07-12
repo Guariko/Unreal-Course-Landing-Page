@@ -37,8 +37,12 @@ html {
 
 body {
     width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
     background: var(--white);
+}
+
+.main {
+    overflow: hidden;
 }
 
 /* FIXME: Setting up the project ends */
@@ -714,6 +718,219 @@ body {
 
 /* FIXME: Course for ends */
 
+/* TODO: Course includes starts */
+
+.includes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 2rem;
+    gap: 3rem;
+}
+
+.includes h2 {
+    font-size: 2rem;
+    color: var(--purple);
+    text-align: center;
+}
+
+.includes__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.include__content h3 {
+    font-size: 1.6rem;
+    color: var(--black);
+    text-align: center;
+}
+
+.include__content p {
+    font-size: 1.2rem;
+    color: var(--pink);
+    text-align: center;
+    margin-top: .5rem;
+}
+
+.includes__image {
+    display: none;
+}
+
+/* FIXME: Course includes ends */
+
+/* TODO: Teacher section starts */
+
+.teacher__section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 7rem 2rem;
+    background: var(--black);
+    position: relative;
+}
+
+.teacher__image {
+    border-radius: 100%;
+    width: 6rem;
+    aspect-ratio: 1;
+    border: 5px solid var(--grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--black);
+}
+
+.teacher__image i {
+    font-size: 3rem;
+    color: var(--white);
+}
+
+.teacher__container {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.teacher__name h2 {
+    font-size: 2rem;
+    color: var(--grey);
+}
+
+.teacher__name p {
+    font-size: 1.2rem;
+    color: var(--purple);
+    font-weight: bold;
+}
+
+.teacher__informations {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.teacher__informations p {
+    font-size: 1.7rem;
+    color: #eee;
+    max-width: 50ch;
+}
+
+.teacher__unreal__image {
+    display: none;
+}
+
+/* FIXME: Teacher section ends */
+
+/* TODO: Price section starts */
+
+.price__section {
+    background: var(--black);
+    margin-top: -4rem;
+    padding: 10rem 2rem 4rem 2rem;
+}
+
+.price__section .button {
+    max-width: 40rem;
+}
+
+/* FIXME: Price section ends */
+
+/* TODO: Questions start */
+
+.questions {
+    padding: 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.questions h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.questions h2 mark {
+    color: var(--purple);
+}
+
+.questions .include__content p {
+    font-size: 1.5rem;
+}
+
+.socialmedia__icons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.socialmedia__icons i {
+    font-size: 3rem;
+    padding: 1.5rem;
+    border-radius: 100%;
+    background: var(--black);
+    color: var(--white);
+    cursor: pointer;
+}
+
+/* FIXME: Questions end */
+
+/* TODO: Footer starts */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem 2rem 2rem;
+    border-top: 1px solid var(--grey);
+    gap: 3rem;
+}
+
+.footer__contents {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem 14rem;
+}
+
+.footer__content p {
+    max-width: 50ch;
+    font-size: 1.5rem;
+    color: var(--second-black);
+}
+
+.footer__content h2 {
+    font-size: 2.5rem;
+    color: var(--black);
+    margin-bottom: 1rem;
+}
+
+.footer .socialmedia__icons i {
+    font-size: 2rem;
+}
+
+.copyright p {
+    font-size: 1.2rem;
+    color: var(--black);
+}
+
+.copyright {
+    margin-top: 5rem;
+}
+
+/* FIXME: Footer ends */
+
 /* TODO: Media queries start */
 
 @media screen and (min-width:280px) {
@@ -817,8 +1034,55 @@ body {
         font-size: 1.7rem;  
     }
 
-    /* FIXME: Course for adjsutments end */
-       
+    /* FIXME: Course for adjustments end */
+
+    /* TODO: Couse includes adjustments */
+
+    .include__content p {
+        font-size: 1.5rem;
+    }
+
+    .include__content h3 {
+        font-size: 2rem;
+    }
+
+    .includes h2 {
+        font-size: 3rem;
+    }
+    
+    /* FIXME: Course includes adjustments end */
+
+    /* TODO: Teacher adjsutments */
+
+    .teacher__image {
+        width: 8rem;
+    }
+
+    .teacher__image i {
+        font-size: 4rem;
+    }
+    
+    .teacher__name h2 {
+        font-size: 2.4rem;
+    }
+    
+    .teacher__name p {
+        font-size: 1.5rem;
+    }
+
+    /* FIXME: Teacher adjsutments end */
+
+    /* TODO: Questions adjustments */
+
+    .questions h2 {
+        font-size: 3rem;
+    }
+
+    .questions .include__content p {
+        font-size: 1.8rem;
+    }
+
+    /* FIXME: Questions adjustments end */
 }
 
 @media screen and (min-width: 350px) {
@@ -915,7 +1179,27 @@ body {
     }
 
     /* FIXME: Bonus adjustments end */
+
+    /* TODO: Teacher adjsutments */
+
+    .teacher__image {
+        width: 10rem;
+    }
+
+    .teacher__image i {
+        font-size: 5rem;
+    }
     
+    .teacher__name h2 {
+        font-size: 3rem;
+    }
+    
+    .teacher__name p {
+        font-size: 1.8rem;
+    }
+
+    /* FIXME: Teacher adjsutments end */
+
 }
 
 @media screen and (min-width:500px) {
@@ -991,6 +1275,38 @@ body {
     }
 
     /* FIXME: Benefits section adjsutments end */
+
+    /* TODO: Teacher adjsutments */
+
+    .teacher__image {
+        width: 12rem;
+    }
+
+    .teacher__image i {
+        font-size: 6rem;
+    }
+    
+    .teacher__name h2 {
+        font-size: 4rem;
+    }
+    
+    .teacher__name p {
+        font-size: 2.2rem;
+    }
+
+    /* FIXME: Teacher adjsutments end */
+
+    /* TODO: Questions adjustments */
+
+    .questions h2 {
+        font-size: 5rem;
+    }
+
+    .questions .include__content p {
+        font-size: 2rem;
+    }
+
+    /* FIXME: Questions adjustments end */
 
 }
 
@@ -1121,6 +1437,35 @@ body {
     }
 
     /* FIXME: Course for adjsutments end */
+
+    /* TODO: Course includes adjsutments */
+
+    .include__content p {
+        font-size: 1.7rem;
+    }
+
+    .include__content h3 {
+        font-size: 3rem;
+    }
+
+    .includes h2 {
+        font-size: 4rem;
+    }
+
+    /* FIXME: Course includes adjsutments end */
+
+    /* TODO: Questions adjustments */
+
+    .questions .include__content p {
+        font-size: 2.5rem;
+    }
+
+    .socialmedia__icons i {
+        font-size: 4rem;
+    }
+
+    /* FIXME: Questions adjustments end */
+
   
 }
 
@@ -1135,6 +1480,8 @@ body {
 
     /* FIXME: Header adjustments end */
 
+    /* TODO: Couse results adjustments */
+
     .course__results {
         display: grid;
         grid-template-columns: repeat(3, 22rem);
@@ -1142,6 +1489,33 @@ body {
         gap: 4.5rem 8rem;
         width: 100%;
     }
+
+    /* FIXME: Couse results adjsutments end */
+
+    /* TODO: Teacher adjustments */
+
+    .teacher__unreal__image {
+        position: absolute;
+        display: block;
+    }
+    
+    .teacher__unreal__image img {
+        width: 35rem;
+        aspect-ratio: 1;
+        filter: opacity(40%);
+    }
+
+    .first {
+        left: -17.5rem;
+        top: 4rem;
+    }
+
+    .second {
+        right: -17.5rem;
+        bottom: 4rem;
+    }
+
+    /* FIXME: Teacher adjustments end */
     
 }
 
@@ -1152,6 +1526,8 @@ body {
     .grid__section {
         grid-template-columns: repeat(5, 19rem);
     }
+
+    /* FIXME: Grid section adjustments end */
     
 }
 
@@ -1215,6 +1591,43 @@ body {
     }
 
     /* FIXME: Course for adjsutments end */
+
+    /* TODO: Course includes adjsutments */
+    
+    .includes {
+        position: relative;
+    }
+
+    .includes__image {
+        display: block;
+        position: absolute;
+        right: -25rem;
+        top: 10rem;
+    }
+
+    .includes__image img {
+        width: 50rem;
+        aspect-ratio: 1;
+        filter: opacity(40%);
+    }
+
+    /* FIXME: Course includes adjsutments end */
+
+    /* TODO: Teacher adjustments */
+    
+    .teacher__unreal__image img {
+        width: 50rem;
+    }
+
+    .first {
+        left: -25rem;
+    }
+
+    .second {
+        right: -25rem;
+    }
+
+    /* FIXME: Teacher adjustments end */
 
 }
 
